@@ -1216,7 +1216,7 @@ on:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - uses: INTI-CMNB/KiBot@v0.7.0
+      - uses: INTI-CMNB/KiBot@latest
         with:
         # Required - kibot config file
           config: config.kibot.yaml
@@ -1227,7 +1227,7 @@ on:
         # optional - PCB design file
           board: '*.kicad_pcb'
       - name: upload results
-        uses: actions/upload-artifact@v2.0
+        uses: actions/upload-artifact@v2
         with:
           name: output
           path: output
